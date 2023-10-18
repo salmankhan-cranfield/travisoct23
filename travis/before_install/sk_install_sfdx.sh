@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# installing salesforceCLI
 echo -e "\nInstalling Salesforce CLI\n"
 
 
