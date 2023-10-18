@@ -1,0 +1,23 @@
+os: linux
+dist: xenial
+language: node_js
+cache:
+  npm: false
+branches:
+  only:
+    - INT
+    - uat
+    - master
+git:
+  depth: 1
+jobs:
+  include:
+    - stage: Salesforce validations
+      if: branch = INT AND type = pull_request
+      script: "./travis/jobs/auth_prod.sh"
+      name: authorise prod
+      before_install:
+        - source travis/before_install/sk_install_sfdx.sh
+      after_script: 
+        - "./travis/jobs/validation.sh"
+        
