@@ -7,5 +7,6 @@
 
 
 
-sf project deploy validate --source-dir force-app --target-org skprod --wait 120 --test-level RunLocalTests --verbose 
+sf project deploy validate --source-dir force-app --target-org skprod --wait 120 --test-level RunLocalTests --verbose  >> $temp
+echo $temp
 
