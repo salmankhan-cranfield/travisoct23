@@ -7,7 +7,7 @@
 
 temp=$(mktemp)
 
-sf project deploy validate --source-dir force-app --target-org skprod --wait 120 --test-level RunLocalTests --verbose >> $temp
+sf project deploy validate --source-dir force-app --target-org skprod --wait 120 --test-level RunLocalTests --verbose 2>&1 | tee "$temp"
 echo "Command output:"
 cat "$temp"
 echo "Value of temp variable: $temp"
