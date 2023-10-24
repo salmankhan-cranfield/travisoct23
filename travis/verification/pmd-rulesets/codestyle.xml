@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<ruleset name="Code Style"
+		 xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+	<description>
+		Code Style
+	</description>
+
+	<rule ref="category/apex/codestyle.xml/ClassNamingConventions">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/FieldDeclarationsShouldBeAtStart">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/FieldNamingConventions">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/ForLoopsMustUseBraces">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/FormalParameterNamingConventions">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/IfElseStmtsMustUseBraces">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/IfStmtsMustUseBraces">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/LocalVariableNamingConventions">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/MethodNamingConventions">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/OneDeclarationPerLine">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/PropertyNamingConventions">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/WhileLoopsMustUseBraces">
+		<priority>3</priority>
+	</rule>
+
+</ruleset>

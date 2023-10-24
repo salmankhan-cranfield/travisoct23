@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<ruleset name="Error prone"
+		 xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+	<description>
+		Error prone
+	</description>
+
+	<rule ref="category/apex/errorprone.xml/ApexCSRF">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/AvoidDirectAccessTriggerMap">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/AvoidHardcodingId">
+		<priority>1</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/AvoidNonExistentAnnotations">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/EmptyCatchBlock">
+		<priority>1</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/EmptyIfStmt">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/EmptyStatementBlock">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/EmptyTryOrFinallyBlock">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/EmptyWhileStmt">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/InaccessibleAuraEnabledGetter">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/MethodWithSameNameAsEnclosingClass">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/OverrideBothEqualsAndHashcode">
+		<priority>3</priority>
+	</rule>
+	<rule ref="category/apex/errorprone.xml/TestMethodsMustBeInTestClasses">
+		<priority>3</priority>
+	</rule>
+
+</ruleset>
