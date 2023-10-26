@@ -20,4 +20,10 @@ jobs:
         - source travis/before_install/sk_install_sfdx.sh
       after_script: 
         - "./travis/jobs/validation.sh"
+
+    - script: "./travis/verification/pmd.sh partial"
+      if: branch = dev AND type = pull_request
+      name: Problem Mistake Detector for additional static code analysis
+      language: shell
+      install: source travis/before_install/install_pmd.sh
         
