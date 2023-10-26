@@ -22,7 +22,7 @@ jobs:
         - "./travis/jobs/validation.sh"
 
     - script: "./travis/verification/pmd.sh partial"
-      if: branch = dev AND type = pull_request
+      if: branch = INT AND type = pull_request
       name: Problem Mistake Detector for additional static code analysis
       language: shell
       install: source travis/before_install/install_pmd.sh
