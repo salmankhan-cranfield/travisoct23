@@ -21,7 +21,7 @@ jobs:
       after_script: 
         - "./travis/jobs/validation.sh"
 
-    - script: "./travis/verification/pmd.sh partial"
+    - script: "./travis/verification/pmd.sh"
       if: branch = INT AND type = pull_request
       name: Problem Mistake Detector for additional static code analysis
       language: shell
